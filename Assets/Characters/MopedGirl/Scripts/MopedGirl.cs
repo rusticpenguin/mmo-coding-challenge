@@ -7,7 +7,8 @@ public class MopedGirl : MonoBehaviour
     [SerializeField] int health = 12;
     [SerializeField] int exp = 0;
 
-    float accel = 0f;
+    // The issue was acceleration was set to 0
+    float accel = 0.05f;
     [SerializeField] float currentYSpeed = 0f;
     [SerializeField] float maxYSpeed = 4f;
     [SerializeField] float xSpeed = 2f;
